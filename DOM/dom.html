@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(151, 35, 35);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Aqui tem um parágrafo</p>
+    <p id="pTeste">Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <p id="pClasse">SEI LA</p>
+    <button>Clique em mim</button>
+    <button id="botao2">não clique</button>
+
+    <script>
+        let corpo = document.body
+        corpo.style.backgroundColor = 'black'
+
+        let paragrafo1 = document.getElementsByTagName('p')[1]
+        paragrafo1.style.color = 'blue'
+
+        let clique = document.querySelector('button')
+        clique.addEventListener('click', function(event){
+            paragrafo1.style.color = 'white'
+            corpo.style.backgroundColor = 'blue'
+        })
+
+        clique.addEventListener('click', function(event) {
+            console.log("você clicou no botão")
+        })
+
+        let paragrafo2 = document.getElementById('pTeste')
+        paragrafo2.style.color = 'blue'
+
+        let paragrafo3 = document.getElementsByClassName('#pClasse')[0]
+        paragrafo3.style.color = 'red'
+
+        let mouse = document.getElementById('botao2')
+        mouse.addEventListener('mouseout', function(event) {
+            console.log("passou o mouse por cima")
+        })
+
+        mouse.addEventListener('mouseout', function(event){
+            console.log("tecla pressionada")
+        })
+    </script>
+</body>
+</html>
