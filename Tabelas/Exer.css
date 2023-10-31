@@ -1,0 +1,25 @@
+table {
+    border-radius: 20px;
+    overflow: hidden;
+    border-spacing: 0;
+    width: 70%;
+    height: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   box-shadow:10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#ai {
+    background-color: rgb(58, 68, 92);
+    color: white;
+    padding: 30px;
+}
+
+#ei {
+    background-color: rgb(180, 217, 247);
+}
