@@ -1,0 +1,20 @@
+body {
+    font: 1em Arial, Helvetica, sans-serif;
+}
+
+#caixa {
+    background-color: aquamarine;
+    width: 400px;
+    margin: auto;
+    padding: 1px 10px;
+    box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.37);
+}
+
+#caixa2 {
+    background-color: rgba(255, 115, 0);
+    width: 400px;
+    margin: auto;
+    padding: 1px 10px;
+    border-radius: 10px 30px;
+    box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.37);
+}
