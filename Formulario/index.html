@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="Fname">Nome:</label><br>
+        <input type="text" id="Fname" name="Fname"><br>
+ 
+        <label for="lname">Sobrenome:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <p>Para qual time você torce?</p>
+
+    <form>
+      <input type="radio" id="gremio" name="time_fav" value="Grêmio">
+      <label for="gremio">Grêmio</label><br>
+
+      <input type="radio" id="inter" name="time_fav" value="Internacional">
+      <label for="inter">Internacional</label><br>
+
+      <input type="radio" id="nenhum" name="time_fav" value="nenhum">
+      <label for="nenhum">Nenhuma das opções</label>
+
+    </form>
+
+    <p>Quais comidas desta lista você come?</p>
+    <form>
+        <fieldset>
+       <input type="checkbox" id="opcao1" name="opcao1" value="Pizza">
+       <label for="opcao1">Pizza</label><br>
+       <input type="checkbox" id="opcao2" name="opcao2" value="Xis">
+       <label for="opcao2">Xis</label><br>
+       <input type="checkbox" id="opcao3" name="opcao3" value="Pastel">
+       <label for="opcao3">Pastel</label>
+    </fieldset>
+    </form>
+    
+    <form>
+        <label for="fru">Escolha uma fruta:</label>
+
+        <select name="fru" id="frente">
+        <option value="uva">uva</option>
+        <option value="morango">Morango</option>
+        <option value="laranja">Laranja</option>
+        <option value="manga">Manga</option>
+        </select><br>
+    
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <h2>Area de texto</h2>
+    <p>O elemento textarea permite escrever um texto grande.</p>
+
+    <form>
+        <textarea name="message"></textarea><br>
+        <input type="submit" value="Enviar">
+
+    </form>
+
+   <form>
+     <label for="aniversario">Aniversario:</label>
+     <input type="date" id="aniversario" name="aniversario">
+   </form>
+
+   <form>
+     <label for="email">Insira seu email:</label>
+     <input type="email" name="email" id="email">
+   </form>
+
+   <form>
+    <label for="arquivo">Selecione um arquivo:</label>
+    <input type="file" name="arquivo" id="arquivo">
+   </form>
+
+   <form>
+    <label for="idade">Idade:</label>
+    <input type="number" name="idade" id="idade">
+   </form>
+
+</body>
+</html>
